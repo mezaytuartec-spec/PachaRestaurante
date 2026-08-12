@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1c1b19" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="512x512" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <title>Pacha · Cocina de Autor en Cafayate, Salta</title>
+    <!--
+      Datos del restaurante para búsqueda local. Van acá, estáticos, para que los
+      lean también los rastreadores que no ejecutan JavaScript. Si cambian los
+      horarios o el teléfono en la página, actualizar también este bloque.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Pacha Cocina de Autor",
+        "description": "Cocina de autor étnica de recolección del chef Tomás Casado en Cafayate, Salta.",
+        "servesCuisine": ["Cocina de autor", "Cocina argentina", "Cocina del norte argentino"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Gral. Güemes Sur 143",
+          "addressLocality": "Cafayate",
+          "addressRegion": "Salta",
+          "addressCountry": "AR"
+        },
+        "telephone": "+543868412206",
+        "email": "pachacocinadeautor@gmail.com",
+        "acceptsReservations": "https://pacha.meitre.com/",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "19:00",
+            "closes": "23:30"
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/pachacafayate",
+          "https://www.facebook.com/pachacafayate/"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
